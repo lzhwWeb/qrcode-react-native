@@ -45,8 +45,6 @@ prop      | type                 | default value
 ----------|----------------------|--------------
 `value`   | `string`             | ` `
 `size`    | `number`             | `128`
-`bgColor` | `string` (CSS color) | `"#000"`
-`fgColor` | `string` (CSS color) | `"#FFF"`
 `errorCorrectLevel` | `string`('L','M','Q','H') | `L`
 
 ##### QRCanvas
