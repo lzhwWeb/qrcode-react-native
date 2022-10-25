@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "jsx": "react-native",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "types": [],
+    "lib": ["es5", "es6", "es2017.object", "dom"],
+    "skipLibCheck": true
+  },
+  "include": ["src/*"]
+}

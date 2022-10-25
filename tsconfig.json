@@ -1,0 +1,26 @@
+{
+  "version": "2.0.10",
+  "compilerOptions": {
+    "target": "es6",
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "sourceMap": false,
+    "declaration": true,
+    "module": "commonjs",
+    "removeComments": false,
+    "emitDeclarationOnly": true, // 只生成.d.ts文件
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "jsx": "react-native",
+    "lib": ["es5", "es6", "es2017.object", "dom"]
+  },
+  "exclude": ["node_modules/**"],
+  "include": ["src/*"]
+}

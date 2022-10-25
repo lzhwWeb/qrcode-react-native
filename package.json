@@ -1,0 +1,64 @@
+{
+  "name": "qrcode-react-native",
+  "version": "0.0.3",
+  "description": "react-native qrocode generator",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-web",
+    "qrcode"
+  ],
+  "main": "./lib/index.ts",
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzhwWeb/qrcode-react-native.git"
+  },
+  "scripts": {
+    "build": "rm -rf lib && tsc --pretty && cp -Rf ./src/ ./lib",
+    "prePublish": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "lzhwWeb <liuzhw1985@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lzhwWeb/qrcode-react-native/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/lzhwWeb/qrcode-react-native/#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native-webview": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-flow": "^7.13.13",
+    "@babel/preset-react": "^7.13.13",
+    "@types/react": "^18.0.21",
+    "@types/react-native": "^0.70.4",
+    "babel-loader": "^8.2.2",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-jest": "^25.3.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.23.2",
+    "flow-bin": "^0.111.3",
+    "gh-pages": "^3.2.3",
+    "jest": "^27.4.5",
+    "prettier": "^2.2.1",
+    "tsup": "5.12.6",
+    "typescript": "^4.5.4"
+  }
+}
