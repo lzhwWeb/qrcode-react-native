@@ -17,6 +17,8 @@ export default class App extends React.Component {
           codeValue={this.state.codeValue}
           size={this.state.size}
           errorCorrectLevel="L"
+          fgColor={this.state.fgColor}
+          bgColor={this.state.bgColor}
         />
         <QRCanvas codeValue={this.state.codeValue}
           size={this.state.size}

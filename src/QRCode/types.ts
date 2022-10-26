@@ -11,6 +11,8 @@ export interface IPropsImg{
   size?: number
   margin?:number
   errorCorrectLevel?:'L'|'M'|'Q'|'H' 
+  fgColor?: string
+  bgColor?: string
 }
 export interface IPropsCanvas{
   codeValue: string

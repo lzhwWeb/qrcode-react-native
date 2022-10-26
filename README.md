@@ -26,6 +26,8 @@ export default class App extends React.Component {
           codeValue={this.state.codeValue}
           size={this.state.size}
           errorCorrectLevel="L"
+          fgColor={this.state.fgColor}
+          bgColor={this.state.bgColor}
         />
         <QRCanvas codeValue={this.state.codeValue}
           size={this.state.size}
@@ -45,15 +47,19 @@ prop      | type                 | default value
 ----------|----------------------|--------------
 `value`   | `string`             | ` `
 `size`    | `number`             | `128`
+`bgColor` | `string` (CSS color) | `"#000000"`
+`fgColor` | `string` (CSS color) | `"#FFFFFF"`
 `errorCorrectLevel` | `string`('L','M','Q','H') | `L`
+
+>warning: QRCodeImg's color need CSS color
 
 ##### QRCanvas
 prop      | type                 | default value
 ----------|----------------------|--------------
 `value`   | `string`             | ` `
 `size`    | `number`             | `128`
-`bgColor` | `string` (CSS color) | `"#000"`
-`fgColor` | `string` (CSS color) | `"#FFF"`
+`bgColor` | `string` (CSS color) | `"#000000"`
+`fgColor` | `string` (CSS color) | `"#FFFFFF"`
 `errorCorrectLevel` | `string`('L','M','Q','H') | `L`
 
 >warning: QRCanvas need react-native-webview

@@ -8,6 +8,8 @@ interface IState {
     size: number
     margin: number
     errorCorrectLevel: 'L' | 'M' | 'Q' | 'H'
+    fgColor: string
+    bgColor: string
 }
 export default class QRCodeImg extends React.PureComponent<IPropsImg, IState>{
     constructor(props: IPropsImg) {
@@ -16,12 +18,14 @@ export default class QRCodeImg extends React.PureComponent<IPropsImg, IState>{
             codeValue: props.codeValue,
             size: props.size || 128,
             margin: props.margin || 4,
-            errorCorrectLevel: props.errorCorrectLevel || 'L'
+            errorCorrectLevel: props.errorCorrectLevel || 'L',
+            fgColor: props.fgColor || '#000000',
+            bgColor: props.bgColor || '#FFFFFF',
         }
     }
 
     render() {
-        var qr = qrcodegen(0, this.state.errorCorrectLevel);
+        var qr = qrcodegen(0, this.state.errorCorrectLevel, this.state.fgColor, this.state.bgColor);
         qr.addData(this.state.codeValue);
         qr.make();
         var moduleCount = qr.getModuleCount();
